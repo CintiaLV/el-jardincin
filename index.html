@@ -215,18 +215,6 @@
 			  }
 
 			}
-.banner-jardincin {
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-}
-
-.banner-jardincin img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
 
 		</style>
 
@@ -234,9 +222,11 @@
     </head>
     <body ng-app='app' style="background-color: #ebebeb;" ng-controller='ctrMan' ng-cloack>
 <!-- BANNER EL JARDINCÍN -->
-<div class="banner-jardincin">
-  <img src="assets/banner.jpg" alt="Banner El Jardincín">
+<div style="width: 100%; max-height: 400px; overflow: hidden;">
+  <img src="assets/banner.jpg" alt="Banner El Jardincín" style="width: 100%; height: auto; object-fit: cover; display: block;">
 </div>
+
+
         <div id="loader"></div>
         <div id="ctnMan" style="visibility: hidden;">
             <div class="w3-row {{clt}} fxd" >
@@ -838,6 +828,21 @@
 		</script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

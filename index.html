@@ -53,9 +53,12 @@
 			  height: 60px;
 			}
 			.bar-logo{
-			  margin-top: 5px;
-			  height: 50px;
-			  width: 50px;
+			 margin-top: 5px;
+    	 height: 50px;        /* altura fija */
+         width: auto;         /* ancho automático, mantiene proporción */
+         max-width: 100%;     /* para que no se desborde del contenedor */
+         object-fit: contain; /* opcional, para asegurarse que se ajuste bien */
+
 			}
 			.bar-cart{
 			  padding-top: 20px;
@@ -213,14 +216,20 @@
 			  	width: 60px;
 			  	text-align: center;
 			  }
+.verde-principal {
+    background-color: #295c1a !important;
+    color: white !important;
+    }
 
+	.w3-panel.w3-card.w3-white {
+    background-color: #536448 !important;
 			}
 
 		</style>
 
 
     </head>
-    <body ng-app='app' style="background-color: #ebebeb;" ng-controller='ctrMan' ng-cloack>
+    <body ng-app='app' style="background-color: #76806c;" ng-controller='ctrMan' ng-cloack>
 
         <div id="loader"></div>
         <div id="ctnMan" style="visibility: hidden;">
@@ -823,6 +832,7 @@
 		</script>
     </body>
 </html>
+
 
 
 

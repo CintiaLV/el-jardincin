@@ -52,14 +52,11 @@
 			.bar-height{
 			  height: 60px;
 			}
-			.bar-logo {
-   		 margin-top: 5px;
-    	 height: 50px;        /* altura fija */
-         width: auto;         /* ancho automático, mantiene proporción */
-         max-width: 100%;     /* para que no se desborde del contenedor */
-         object-fit: contain; /* opcional, para asegurarse que se ajuste bien */
-}
-
+			.bar-logo{
+			  margin-top: 5px;
+			  height: 50px;
+			  width: 50px;
+			}
 			.bar-cart{
 			  padding-top: 20px;
 			  padding-left: 5%;
@@ -218,23 +215,12 @@
 			  }
 
 			}
-			
-	.verde-principal {
-    background-color: #295c1a !important;
-    color: white !important;
-    }
-
-	.w3-panel.w3-card.w3-white {
-    background-color: #536448 !important;
-}
-
-
 
 		</style>
 
 
     </head>
-    <body ng-app='app' style="background-color:#76806c;" ng-controller='ctrMan' ng-cloack>
+    <body ng-app='app' style="background-color: #ebebeb;" ng-controller='ctrMan' ng-cloack>
 
         <div id="loader"></div>
         <div id="ctnMan" style="visibility: hidden;">
@@ -833,41 +819,10 @@
 			function ajIm(el){
 				el.style.marginTop = ((260-el.offsetHeight)/2)+"px";
 			}
-			var data = /*#d4t4#*/ {"itm":[{"c":7,"d":"RANITA CON INSTRUMENTO","i":106,"k":"Sin Clave","l":"null","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":6,"d":"NACAR SIMPLE","i":2,"k":"MJ02","l":"img_2","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":4,"d":"LLAMITA","i":71,"k":"MJ70","l":"null","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":4,"d":"MACETA N8","i":62,"k":"Sin Clave","l":"null","p":"$100.00","u":4,"v":100,"z":10},{"c":1,"d":"ALEGRIA DEL HOGAR","i":4,"k":"MJ04","l":"img_4","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":1,"d":"BEGONIA BRASILERA","i":57,"k":"MJ58","l":"img_57","p":"$3,000.00","u":7,"v":3000,"z":10},{"c":1,"d":"BEGONIA VERDE","i":72,"k":"MJ71","l":"img_72","p":"$2,000.00","u":7,"v":2000,"z":10},{"c":1,"d":"BROMELIA LAGRIMA DE REINA","i":29,"k":"MJ30","l":"null","p":"$2,000.00","u":7,"v":2000,"z":10},{"c":1,"d":"CALATHEA LOUISAE","i":98,"k":"Sin Clave","l":"null","p":"$3,000.00","u":0,"v":3000,"z":10},{"c":1,"d":"CAÑA DE INDIO","i":97,"k":"Sin Clave","l":"null","p":"$2,000.00","u":0,"v":2000,"z":10},{"c":1,"d":"COLEO","i":31,"k":"MJ32","l":"img_31","p":"$1,500.00","u":7,"v":1500,"z":10},{"c":1,"d":"CROTON TRICOLOR","i":42,"k":"MJ43","l":"null","p":"$4,000.00","u":4,"v":4000,"z":10},{"c":1,"d":"ERICA","i":3,"k":"MJ03","l":"img_3","p":"$2,200.00","u":7,"v":2200,"z":10},{"c":1,"d":"GERANIO HIEDRA","i":34,"k":"MJ35","l":"null","p":"$1,800.00","u":4,"v":1800,"z":10},{"c":1,"d":"HELECHO","i":88,"k":"MJ18","l":"null","p":"$6,000.00","u":7,"v":6000,"z":10},{"c":1,"d":"HELECHO ARROZ VAR","i":1,"k":"MJ01","l":"null","p":"$1,500.00","u":4,"v":1500,"z":10},{"c":1,"d":"HELECHO BOSTON","i":19,"k":"MJ19","l":"img_19","p":"$6,000.00","u":7,"v":6000,"z":10},{"c":1,"d":"INCIENSO","i":8,"k":"MJ08","l":"null","p":"$1,500.00","u":7,"v":1500,"z":10},{"c":1,"d":"IRISINI HERBSTI","i":10,"k":"MJ10","l":"img_10","p":"$1,500.00","u":7,"v":1500,"z":10},{"c":1,"d":"MALVON ENANO","i":90,"k":"MJ36","l":"img_90","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":1,"d":"PILEA CADIEREI","i":50,"k":"MJ52","l":"null","p":"$1,500.00","u":4,"v":1500,"z":10},{"c":1,"d":"POTHUS JOY","i":48,"k":"MJ50","l":"img_48","p":"$2,000.00","u":7,"v":2000,"z":10},{"c":1,"d":"PRIMULA OBCONICA","i":38,"k":"MJ39","l":"img_38","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":2,"d":"ARBOL DE JADE","i":55,"k":"MJ57","l":"img_55","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":2,"d":"CEROPEGIA WOODI","i":9,"k":"MJ09","l":"null","p":"$1,500.00","u":7,"v":1500,"z":10},{"c":2,"d":"EUFORBIA TRIGONA RUBRA","i":37,"k":"MJ38","l":"null","p":"$1,500.00","u":4,"v":1500,"z":10},{"c":2,"d":"GARRA DE OSOS M9","i":61,"k":"MJ61","l":"null","p":"$2,000.00","u":7,"v":2000,"z":10},{"c":2,"d":"KALANCHOE","i":67,"k":"MJ66","l":"null","p":"$1,800.00","u":7,"v":1800,"z":10},{"c":2,"d":"SEDUM POTOSINUM","i":81,"k":"S03","l":"img_81","p":"$1,000.00","u":7,"v":1000,"z":10},{"c":2,"d":"SEDUM RUPESTRE","i":80,"k":"S02","l":"img_80","p":"$1,200.00","u":7,"v":1200,"z":10},{"c":2,"d":"SEDUM SPIRAL STAIRCASE","i":86,"k":"S08","l":"img_86","p":"$800.00","u":7,"v":800,"z":10},{"c":2,"d":"SENECIO DELFIN","i":14,"k":"MJ14","l":"null","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":2,"d":"SUCULENTA M6","i":52,"k":"MJ54","l":"null","p":"$500.00","u":4,"v":500,"z":10},{"c":5,"d":"LOMBRI COMPUESTO","i":117,"k":"Sin Clave","l":"img_117","p":"$4,800.00","u":0,"v":4800,"z":10},{"c":5,"d":"SUSTRATO COMPOST 5DM3","i":114,"k":"Sin Clave","l":"img_114","p":"$3,300.00","u":0,"v":3300,"z":10},{"c":5,"d":"SUSTRATO COMPOST 5L","i":116,"k":"Sin Clave","l":"img_116","p":"$3,600.00","u":0,"v":3600,"z":10},{"c":5,"d":"SUSTRATO CRASAS","i":118,"k":"Sin Clave","l":"img_118","p":"$3,300.00","u":0,"v":3300,"z":10},{"c":5,"d":"SUSTRATO EL BOTANICO 20 DM3","i":120,"k":"Sin Clave","l":"img_120","p":"$6,000.00","u":0,"v":6000,"z":10},{"c":5,"d":"SUSTRATO ORGANICO 5DM3","i":113,"k":"Sin Clave","l":"img_113","p":"$3,000.00","u":0,"v":3000,"z":10},{"c":5,"d":"SUSTRATO PLANTAS DE INTERIOR 5L","i":115,"k":"Sin Clave","l":"img_115","p":"$4,000.00","u":0,"v":4000,"z":10},{"c":5,"d":"SUSTRATO SUPER ABONO 5L","i":119,"k":"Sin Clave","l":"img_119","p":"$3,300.00","u":0,"v":3300,"z":10},{"c":0,"d":"CRASSULA","i":122,"k":"Sin Clave","l":"null","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":0,"d":"CRASSULA RADICANS","i":109,"k":"Sin Clave","l":"null","p":"$1,300.00","u":0,"v":1300,"z":10},{"c":0,"d":"OXALIS TENERIENSIS","i":110,"k":"Sin Clave","l":"null","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":0,"d":"TACITA CON SUCUS","i":112,"k":"Sin Clave","l":"null","p":"$2,800.00","u":0,"v":2800,"z":10}],"ctg":[{"i":0,"n":"Todos"},{"i":6,"n":"BEGONIAS"},{"i":4,"n":"MACETA"},{"i":1,"n":"PLANTAS"},{"i":2,"n":"SUCULENTAS"},{"i":5,"n":"SUSTRATO"}],"und":[{"i":0,"n":"Sin Unidad"},{"i":4,"n":"PIEZA"},{"i":7,"n":"--"}],"ngc":"El JardinCin","tel2":"3518198042","cor2":"","dir2":"¡Gracias por tu compra! Si subis tu plantita a las redes etiquetanos 🥰","alf":"Alfabeto","myp":"Mayor Precio","mnp":"Menor Precio","ctgs":"Categoría","orp":"Ordenar Por","bsc":"Buscar","crt":true,"nam":"Nombre","sct":"Comprar Ahora","ernw":"Error al conectarse al servidor, compruebe su conexión a internet e intente nuevamente.","img":true,"uni":false,"cla":false,"wha":true,"clo":"Cerrar","nxt":"Siguiente","prv":"Anterior","sin":"Sin Información","clt":"verde-principal","tmp":1754866941498,"lg":"logo"} /*#d4t4#*/;
+			var data = /*#d4t4#*/ {"itm":[{"c":7,"d":"RANITA CON INSTRUMENTO","i":106,"k":"Sin Clave","l":"null","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":6,"d":"NACAR SIMPLE","i":2,"k":"MJ02","l":"img_2","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":10,"d":"CACTUS MAMILLARA CRESTADA","i":132,"k":"Sin Clave","l":"img_132","p":"$1,800.00","u":0,"v":1800,"z":10},{"c":11,"d":"LLAMITA CON SUCUS","i":71,"k":"Sin Clave","l":"img_71","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":4,"d":"MACETA N8","i":62,"k":"Sin Clave","l":"null","p":"$200.00","u":0,"v":200,"z":10},{"c":9,"d":"ALEGRIA DEL HOGAR BLANCA","i":134,"k":"Sin Clave","l":"img_134","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":9,"d":"ALEGRIA DEL HOGAR C CORAL","i":137,"k":"Sin Clave","l":"img_137","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":9,"d":"ALEGRIA DEL HOGAR CORAL","i":4,"k":"Sin Clave","l":"img_4","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":9,"d":"ALEGRIA DEL HOGAR FUCSIA","i":136,"k":"Sin Clave","l":"img_136","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":9,"d":"ALEGRIA DEL HOGAR ROJA","i":138,"k":"Sin Clave","l":"img_138","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":9,"d":"ALEGRIA DEL HOGAR ROSA CLARO","i":135,"k":"Sin Clave","l":"img_135","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":9,"d":"ALISO","i":131,"k":"Sin Clave","l":"img_131","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":9,"d":"INCIENSO","i":8,"k":"Sin Clave","l":"img_8","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":9,"d":"IRISINI HERBSTI","i":10,"k":"Sin Clave","l":"img_10","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":9,"d":"OXALIS ROJO","i":144,"k":"Sin Clave","l":"img_144","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":1,"d":"BEGONIA BRASILERA","i":57,"k":"Sin Clave","l":"img_57","p":"$3,000.00","u":0,"v":3000,"z":10},{"c":1,"d":"BROMELIA LAGRIMA DE REINA","i":29,"k":"MJ30","l":"null","p":"$2,000.00","u":7,"v":2000,"z":10},{"c":1,"d":"CALATHEA LOUISAE","i":98,"k":"Sin Clave","l":"null","p":"$3,000.00","u":0,"v":3000,"z":10},{"c":1,"d":"COLEO","i":31,"k":"MJ32","l":"img_31","p":"$1,500.00","u":7,"v":1500,"z":10},{"c":1,"d":"ERICA","i":3,"k":"MJ03","l":"img_3","p":"$2,200.00","u":7,"v":2200,"z":10},{"c":1,"d":"HELECHO","i":88,"k":"Sin Clave","l":"img_88","p":"$6,000.00","u":0,"v":6000,"z":10},{"c":1,"d":"HELECHO ARROZ VAR","i":1,"k":"MJ01","l":"null","p":"$1,500.00","u":4,"v":1500,"z":10},{"c":1,"d":"HELECHO BOSTON","i":19,"k":"MJ19","l":"img_19","p":"$6,000.00","u":7,"v":6000,"z":10},{"c":1,"d":"MALVON ENANO","i":90,"k":"MJ36","l":"img_90","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":1,"d":"NACAR DOBLE BLANCO","i":148,"k":"Sin Clave","l":"img_148","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":1,"d":"NACAR DOBLE ROJO","i":147,"k":"Sin Clave","l":"img_147","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":1,"d":"PILEA CADIEREI","i":50,"k":"Sin Clave","l":"img_50","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":1,"d":"PRIMULA OBCONICA","i":38,"k":"MJ39","l":"img_38","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":2,"d":"ARBOL DE JADE","i":55,"k":"MJ57","l":"img_55","p":"$2,500.00","u":7,"v":2500,"z":10},{"c":2,"d":"CEROPEGIA WOODI","i":9,"k":"MJ09","l":"null","p":"$1,500.00","u":7,"v":1500,"z":10},{"c":2,"d":"COTYLEDON PENDENS","i":111,"k":"Sin Clave","l":"img_111","p":"$1,800.00","u":0,"v":1800,"z":10},{"c":2,"d":"CRASSULA CAPITELLA CAMPFIRE","i":150,"k":"Sin Clave","l":"img_150","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":2,"d":"CRASSULA SPRINGTIME","i":146,"k":"Sin Clave","l":"img_146","p":"$2,000.00","u":0,"v":2000,"z":10},{"c":2,"d":"ECHEVERIA CULIBRA M12 P\/14","i":140,"k":"Sin Clave","l":"img_140","p":"$15,000.00","u":0,"v":15000,"z":10},{"c":2,"d":"GARRA DE OSOS M9","i":61,"k":"MJ61","l":"null","p":"$2,000.00","u":7,"v":2000,"z":10},{"c":2,"d":"KALANCHOE","i":67,"k":"MJ66","l":"null","p":"$1,800.00","u":7,"v":1800,"z":10},{"c":2,"d":"ROSARIO VARIEGADO M09","i":139,"k":"Sin Clave","l":"img_139","p":"$1,800.00","u":0,"v":1800,"z":10},{"c":2,"d":"SEDUM BLUE CARPET","i":85,"k":"Sin Clave","l":"img_85","p":"$1,000.00","u":0,"v":1000,"z":10},{"c":2,"d":"SEDUM MIRINAE","i":123,"k":"Sin Clave","l":"img_123","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":2,"d":"SEDUM PALMERI","i":141,"k":"Sin Clave","l":"img_141","p":"$3,000.00","u":0,"v":3000,"z":10},{"c":2,"d":"SEDUM POTOSINUM","i":81,"k":"S03","l":"img_81","p":"$1,000.00","u":7,"v":1000,"z":10},{"c":2,"d":"SEDUM SPIRAL STAIRCASE","i":86,"k":"S08","l":"img_86","p":"$800.00","u":7,"v":800,"z":10},{"c":2,"d":"SEDUM TOKYO ORO","i":142,"k":"Sin Clave","l":"img_142","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":2,"d":"SENECIO DELFIN","i":14,"k":"Sin Clave","l":"img_14","p":"$2,500.00","u":0,"v":2500,"z":10},{"c":2,"d":"SENECIO HERREIANUS - ROSARIO SANDIA","i":143,"k":"Sin Clave","l":"img_143","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":2,"d":"SENECIO LAGRIMA M09","i":145,"k":"Sin Clave","l":"img_145","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":2,"d":"SENECIO ROWLEYANUS M12","i":129,"k":"Sin Clave","l":"img_129","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":2,"d":"SUCULENTA M6","i":52,"k":"MJ54","l":"null","p":"$500.00","u":4,"v":500,"z":10},{"c":2,"d":"TACITA CON SUCUS","i":112,"k":"Sin Clave","l":"img_112","p":"$2,800.00","u":0,"v":2800,"z":10},{"c":5,"d":"LOMBRI COMPUESTO","i":117,"k":"Sin Clave","l":"img_117","p":"$4,800.00","u":0,"v":4800,"z":10},{"c":5,"d":"SUSTRATO COMPOST 5DM3","i":114,"k":"Sin Clave","l":"img_114","p":"$3,300.00","u":0,"v":3300,"z":10},{"c":5,"d":"SUSTRATO COMPOST 5L","i":116,"k":"Sin Clave","l":"img_116","p":"$3,600.00","u":0,"v":3600,"z":10},{"c":5,"d":"SUSTRATO CRASAS","i":118,"k":"Sin Clave","l":"img_118","p":"$3,300.00","u":0,"v":3300,"z":10},{"c":5,"d":"SUSTRATO EL BOTANICO 20 DM3","i":120,"k":"Sin Clave","l":"img_120","p":"$6,000.00","u":0,"v":6000,"z":10},{"c":5,"d":"SUSTRATO ORGANICO 5DM3","i":113,"k":"Sin Clave","l":"img_113","p":"$3,000.00","u":0,"v":3000,"z":10},{"c":5,"d":"SUSTRATO PLANTAS DE INTERIOR 5L","i":115,"k":"Sin Clave","l":"img_115","p":"$4,000.00","u":0,"v":4000,"z":10},{"c":5,"d":"SUSTRATO SUPER ABONO 5L","i":119,"k":"Sin Clave","l":"img_119","p":"$3,300.00","u":0,"v":3300,"z":10},{"c":0,"d":"CRASSULA","i":122,"k":"Sin Clave","l":"null","p":"$1,500.00","u":0,"v":1500,"z":10},{"c":0,"d":"CRASSULA RADICANS","i":109,"k":"Sin Clave","l":"null","p":"$1,300.00","u":0,"v":1300,"z":10},{"c":0,"d":"OXALIS TENERIENSIS","i":110,"k":"Sin Clave","l":"null","p":"$1,500.00","u":0,"v":1500,"z":10}],"ctg":[{"i":0,"n":"Todos"},{"i":6,"n":"BEGONIAS"},{"i":10,"n":"CACTUS"},{"i":11,"n":"MACETAS DECORADAS"},{"i":4,"n":"MACETAS PLASTICAS"},{"i":9,"n":"PLANTAS DE EXTERIOR"},{"i":1,"n":"PLANTAS DE INTERIOR"},{"i":2,"n":"SUCULENTAS"},{"i":5,"n":"SUSTRATOS"}],"und":[{"i":0,"n":"Sin Unidad"},{"i":4,"n":"PIEZA"},{"i":7,"n":"--"}],"ngc":"El JardinCin","tel2":"3518198042","cor2":"","dir2":"¡Gracias por tu compra! Si subis tu plantita a las redes etiquetanos 🥰","alf":"Alfabeto","myp":"Mayor Precio","mnp":"Menor Precio","ctgs":"Categoría","orp":"Ordenar Por","bsc":"Buscar","crt":true,"nam":"Nombre","sct":"Comprar Ahora","ernw":"Error al conectarse al servidor, compruebe su conexión a internet e intente nuevamente.","img":true,"uni":false,"cla":false,"wha":true,"clo":"Cerrar","nxt":"Siguiente","prv":"Anterior","sin":"Sin Información","clt":"w3-brown","tmp":1755644697646,"lg":"logo"} /*#d4t4#*/;
 		</script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
